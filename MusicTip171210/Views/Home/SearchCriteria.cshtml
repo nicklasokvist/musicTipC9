@@ -1,0 +1,10 @@
+﻿@model MusicTipViewModel
+
+<div style="background-color:white; border-radius:2px; padding:5px; margin-top:5px;">
+    @*<h3>Selected Search Criteria</h3>*@
+    <strong>Search Criteria for selection</strong><br />
+    @*Can be displayed in a more beautiful way...! /Nicklas 171211*@
+    @Html.ListBoxFor(m => m.SelectionSeeds, Model.SelectionSeeds, new { name = "SelectionSeeds", size = 5 })
+    <div ><i>The five most recent selections will be used for requesting listening recommendations.</i></div>
+    <div class="small">[ <i>  ...remove function to be added... </i>] </div>
+</div>

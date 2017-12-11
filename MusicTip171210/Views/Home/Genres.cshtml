@@ -1,0 +1,11 @@
+﻿@model MusicTipViewModel
+
+<div class="container">
+    <div class="form-group">
+        <h4>Related Genres</h4>
+        <form action="@Url.Action("SelectGenre")" method="post">
+            @Html.ListBoxFor(m => m.Genres, Model.Genres, new { name = "SelectGenre", size = 15 })
+            <br /><input type="submit" class="btn btn-primary " value="Select Genre" />
+        </form>
+    </div>
+</div>

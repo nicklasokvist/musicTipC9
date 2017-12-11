@@ -1,0 +1,11 @@
+﻿@model MusicTipViewModel
+
+<div class="jumbotron">
+    <h3>Recommendations</h3>
+    @Html.ListBoxFor(m => m.Recommendations, Model.Recommendations, new { name = "RecommendationTracks", size = 15, id = "RecommendationTracks", style = "width:100%;" })
+    <br /><i>Listen and Enjoy!</i>
+    @if (Model.SelectionSeeds != null)
+    {
+        @Html.Partial("SearchCriteria")
+    }
+</div>
