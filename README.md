@@ -1,2 +1,2 @@
 # musicTipC9
-MusicTip MVC App DEMO
+MusicTip MVC .NET CORE DEMO (Visual Studio Project)
